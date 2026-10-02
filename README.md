@@ -120,5 +120,12 @@ Reference: Microsoft Learn
 4. **Set up Apple MDM Push Certificate**
    - In the Intune admin center, go to **Devices → macOS → Enrollment**  
    - Ensure the **Apple MDM Push Certificate** is active.
+
   
 <img width="1529" height="695" alt="image" src="https://github.com/user-attachments/assets/e48aa0c6-5b64-4157-a8df-a6ac80db084f" /> 
+  
+5. In same menu set these settings and Save
+
+<img width="1203" height="1038" alt="image" src="https://github.com/user-attachments/assets/152232cb-6168-41d5-a024-50f9ffb59ef2" />
+
+
