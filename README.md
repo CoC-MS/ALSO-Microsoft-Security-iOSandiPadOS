@@ -236,4 +236,4 @@ Reference: Microsoft Learn
 
 ## Issues?
 
-Open issue here: 
+Open issue here: https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/issues 
