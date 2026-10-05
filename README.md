@@ -144,7 +144,12 @@ This policy set is designed to require compliant device at sign in together with
 
 **Required administrator roles to do these steps**
 
-Security Administrator and Intune Administrator roles
+Security Administrator and Intune Administrator roles + Conditional Access Administrator for Conditional Access policies 
+
+> [!IMPORTANT]
+> **Always import Conditional Access policies in OFF mode**:
+
+
 
 **Device types supported** 
    - Works with both **personally-owned devices (work profile)** and **corporate-owned devices**
