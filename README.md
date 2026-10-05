@@ -135,6 +135,9 @@ This policy set is designed to require compliant device at sign in together with
 | Groups | 3 Exclude groups for Conditional Access policies incl Break Glass Account group
 | MigrationTable.json | Migration table needed to import groups
 
+> [!IMPORTANT]
+> **Always import Conditional Access policies in OFF mode**:
+
 
 
 ## Before importing (ALSO_IOS_MDE_AUTO_ONBOARDING) 
