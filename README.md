@@ -109,7 +109,7 @@ Security Administrator and Intune Administrator roles
 
 Per September 2026:
 
-iOS 17 or newer
+iOS or iPadOS 17 or newer
 
 Reference: Microsoft Learn
 
