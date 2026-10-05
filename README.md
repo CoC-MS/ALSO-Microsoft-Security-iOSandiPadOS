@@ -26,8 +26,8 @@ All files are organized into categories
 
 ├── ALSO_IOS_MDE_AUTO_ONBOARDING/
 ├── Applications 1 application
-├── DeviceConfiguration 2 Device Configuration policy templates
-
+├── DeviceConfiguration 1 Device Configuration policy templates
+├── AppConfigurationManagedDevice 1 App Configuration policy template
 
 
 
@@ -73,6 +73,24 @@ ALSO – LI – BP – Basic – v1.0– iOS/iPadOS BYOD or Corp –
 | **Assignment** | Assignment scope- device (D) or user (U)|
 
 
+
+
+## What's included in ALSO_IOS_MDE_AUTO_ONBOARDING?
+
+This policy set is designed to automate the onboarding of Corporate Owned iOS and iPadOS devices to Microsoft Defender for Business and Microsoft Defender for Endpoint. 
+
+This folder contains:
+
+
+| Component | Description |
+|-----------|-------------|
+| Application | 1 Application: Microsoft Defender: Security for iOS and iPadOS | Auto installs on device once device are enrolled to Intune. Set as Required and Uninstall is not allowed. 
+| Device Configuration Settings | 1 policy template: Auto onboarding to MDE policy template | Auto onboards device to Defender once device are enrolled to Intune
+| App Configuration Policy | 1 policy templates: Sets Real Time protection and Network Protection ON automatically. This policy also enables organizations to use MDCA - Microsoft Defender for Cloud Apps on those devices.  
+
+> [!IMPORTANT]
+> All of these policy templates and the application are required to enable seamless automatic onboarding of macOS devices to Microsoft Defender for Endpoint when they are enrolled in Intune.
+> ALSO doesn't recommend to push out Defender application to BYOD devices for privacy reasons. 
 
 ## Before importing (ALSO_IOS_MDE_AUTO_ONBOARDING) 
 
