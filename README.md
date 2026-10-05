@@ -103,7 +103,7 @@ This folder contains:
 | App Configuration Policy | 1 policy templates: Sets Real Time protection and Network Protection ON automatically. This policy also enables organizations to use MDCA - Microsoft Defender for Cloud Apps on those devices.  
 
 > [!IMPORTANT]
-> All of these policy templates and the application are required to enable seamless automatic onboarding of macOS devices to Microsoft Defender for Endpoint when they are enrolled in Intune.
+> All these policy templates and the application are required to enable seamless automatic onboarding of iOS and iPadOS devices to Microsoft Defender for Endpoint when they are enrolled in Intune.
 > ALSO doesn't recommend to push out Defender application to BYOD devices for privacy reasons.
 
 
