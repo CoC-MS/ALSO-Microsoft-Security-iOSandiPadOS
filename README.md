@@ -45,7 +45,7 @@ All files are organized into categories
 
 | Tag | Minimum Required License |
 |:---:|--------------------------|
-| **BP** | Microsoft 365 Business Premium or Intune Plan 1 + Defender for Business |
+| **BP** | Microsoft 365 Business Premium |
 
 ---
 
