@@ -40,7 +40,10 @@ All files are organized into categories
 |── CompliancePolicies 4 App Compliance policy templates
 
 ├──ALSO_IOS_CA_POLICIES/ConiditionalAccess
-|── ConditionalAccess 2 Conditional Access policies
+|── ConditionalAccess 3 Conditional Access policies
+|── Groups 3 Conditional groups
+|── MigrationTable.json
+
 
 ```
 
@@ -121,6 +124,16 @@ This policy set is designed to require compliant device at sign in together with
 |-----------|-------------|
 | CompliancePolicies | 4 policy templates: Requires minimum 6 digit PIN and ecryption, requires minimum OS version iOS/iPadOS 17.0, disallows jailbroken devices. Requires Defender compliance for corp devices etc. 
 
+
+## What's included in ALSO_IOS_CA_POLICIES?
+
+This policy set is designed to require compliant device at sign in together with Conditional Access policies.  
+
+| Component | Description |
+|-----------|-------------|
+| ConnditionalAccess | 3 policy templates: 2 of them requires compliant device at sign in for admins and internals and 3rd one requires app protection policies for all users. 
+| Groups | 3 Exclude groups for Conditional Access policies incl Break Glass Account group
+| MigrationTable.json | Migration table needed to import groups
 
 
 
