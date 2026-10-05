@@ -26,11 +26,18 @@ All files are organized into categories
 /ALSO-Microsoft-Security-MacOS
 
 ├── ALSO_IOS_MDE_AUTO_ONBOARDING/
-├── Applications 1 application
-├── DeviceConfiguration 1 Device Configuration policy templates
-├── AppConfigurationManagedDevice 1 App Configuration policy template
+|── Applications 1 application
+|── DeviceConfiguration 1 Device Configuration policy templates
+|── AppConfigurationManagedDevice 1 App Configuration policy template
 
+├──ALSO_IOS_APP_PROTECTION_POLICIES/AppPro
+|── AppPro 1 App Protection policy template
 
+├──ALSO_IOS_APP_COMPLIANCE_POLICIES/CompliancePolicies'
+|── CompliancePolicies 4 App Compliance policy templates
+
+├──ALSO_IOS_CA_POLICIES/ConiditionalAccess
+|── ConditionalAccess 2 Conditional Access policies
 
 ```
 
