@@ -13,6 +13,9 @@
 |-----------|-------------|
 | 🛡️ **Security Information** | [View Security Policy](https://github.com/CoC-MS/ALSO-Microsoft-Security-MacOS/tree/main?tab=security-ov-file) |
 | 📖 **ALSO_IOS_MDE_AUTO_ONBOARDING Description** | [View description](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOS#whats-included-in-also_ios_mde_auto_onboarding)
+| 📖 **ALSO_IOS_APP_PROTECTION_POLICY Description** | [View description](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS#whats-included-in-also_ios_app_protection_policies)
+| 📖 **ALSO_IOS_COMPLIANCE_POLICIES Description** | [View description](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS#whats-included-in-also_ios_compliance_policies)
+| 📖 **ALSO_IOS_CA_POLICIES Description** | [View description](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS#whats-included-in-also_ios_compliance_policies)
 | 🚀 **Before Importing ALSO_IOS_MDE_AUTO_ONBOARDING** | [Read Before Importing Policies](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOS#before-importing-also_ios_mde_auto_onboarding) |
 
 
