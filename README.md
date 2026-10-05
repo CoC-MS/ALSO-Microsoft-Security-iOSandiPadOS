@@ -13,7 +13,7 @@
 |-----------|-------------|
 | 🛡️ **Security Information** | [View Security Policy](https://github.com/CoC-MS/ALSO-Microsoft-Security-MacOS/tree/main?tab=security-ov-file) |
 | 📖 **ALSO_IOS_MDE_AUTO_ONBOARDING Description** | [View description](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOS#whats-included-in-also_ios_mde_auto_onboarding)
-| 📖 **Before importing** | [View description](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOS#before-importing-also_ios_mde_auto_onboarding)
+| 🚀 **Before Importing ALSO_IOS_MDE_AUTO_ONBOARDING** | [Read Before Importing Policies](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOS#before-importing-also_ios_mde_auto_onboarding) |
 
 This folder contains:
 
@@ -25,8 +25,8 @@ This folder contains:
 | Device Configuration Policies | 7 policy templates: MDE Accessibility Settings, MDE Auto-Onboarding Settings, MDE Background Services Settings, MDE Full Disk Access Settings, MDE Notification Settings, and MDE Network filter settings|
 
 > [!IMPORTANT]
-> All of these policy templates and the application are required to enable seamless automatic onboarding of macOS devices to Microsoft Defender for Endpoint when they are enrolled in Intune.) |
-| 🚀 **Before Importing ALSO_IOS_MDE_AUTO_ONBOARDING** | [Read Before Importing Policies](https://github.com/CoC-MS/ALSO-Microsoft-Security-MacOS/blob/main/README.md#before-using-also_macos_mdca_ready-with-business-premium-or-defender-suite-or-microsoft-365-e5) |
+> All of these policy templates and the application are required to enable seamless automatic onboarding of macOS devices to Microsoft Defender for Endpoint when they are enrolled in Intune.)
+> ALSO doesn't reccomend organizations to push out this package to BYOD devices for privacy reasons. 
 
 ---
 
