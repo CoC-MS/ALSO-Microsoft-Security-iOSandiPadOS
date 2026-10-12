@@ -1,44 +1,38 @@
 # 📥 How to import
 
-[Public documentation](README.md) | [Repository preview](../../README.preview.md)
+[Documentation index](README.md) | [Repository README](../../README.md)
 
-Complete [General prerequisites](general-prerequisites.md) and [iOS/iPadOS prerequisites](ios-ipados-prerequisites.md). Select only the resources needed for the intended scenario using [File structure](file-structure.md).
+The original illustrated import instructions follow verbatim.
 
-Use the [Micke M Intune Management Tool](https://github.com/Micke-K/IntuneManagement) to import these exports. Follow the documentation for the version you choose; UI labels and authentication can differ. The Windows version 3 WPF workflow is described below; do not assume its `start.cmd` launcher runs on macOS. The tool's version 4 branch has separate cross-platform instructions.
+## How to import?
 
-## Download and sign in
+1. Download Micke M Intune Management Tool from here:  https://github.com/Micke-K/IntuneManagement
+2. Extract folder and Start with start.cmd in the folder (works without local administrator rights on Windows and MacOS)
+   
+   <img width="635" height="247" alt="image" src="https://github.com/user-attachments/assets/ae7405c2-17cb-43a1-a96e-cd60181a2619" />
 
-1. Download this repository through **Code > Download ZIP**, or clone it. Extract to a short path such as `C:\Intune\iOS`. Long policy filenames can exceed Windows extraction/path limits; use a long-path-capable tool if needed and verify all **15 JSON files** are present. OneDrive does not itself remove path limits, and is not required for import.
-2. Download/extract the Intune Management Tool. Review its source, prerequisites, and authentication permissions. On Windows with the version 3 tool, launch `start.cmd` from its folder.
-3. Use the sign-in icon to authenticate to the intended tenant. Confirm the tenant before any write operation.
-4. If API consent is needed, have an authorized administrator review the requested permissions and approve them through the organization's process; use **Request Consent** if appropriate to that tool version. Do not grant broad consent blindly.
-5. Back up relevant target resources and inventory existing policies/apps/groups to avoid duplicates. The tool's default **Always import** behavior can create new objects; Replace/Update have different risks and must be tested separately.
+4. Command window and UI will open
+5. Press on icon in upper right corner to sign in
 
-## Import selected workloads
+   <img width="1311" height="965" alt="image" src="https://github.com/user-attachments/assets/2e835f79-5e07-4c7d-bd7c-5bd4976fde50" />
 
-| Step | Resource selection | Safety / dependency check |
-| --- | --- | --- |
-| 1 | CA exclusion groups and reference mapping, if importing CA | Keep `ALSO_IOS_CA_POLICIES/Groups` and `MigrationTable.json` available to the tool. Use its supported dependency/migration workflow to resolve source IDs to target groups, or map to reviewed existing groups. |
-| 2 | Defender app, for corporate onboarding | Import/select Microsoft Defender in the target tenant first. The Store app export does not supply volume-purchase licensing or a required-install assignment. |
-| 3 | Managed-device Defender app configuration and VPN profile | Resolve `targetedMobileApps` to the correct target app. Adapt the onboarding design to supervision, enrollment, and user affinity; see [iOS/iPadOS prerequisites](ios-ipados-prerequisites.md). |
-| 4 | App protection and selected compliance policies | Review supported apps, data controls, compliance actions and thresholds. Device compliance is for enrolled devices, not MAM-only BYOD. |
-| 5 | Conditional Access policies, **Off** | Confirm `state=disabled` in the target tenant, then validate all users/roles/apps/platforms, device filters, and mapped exclusion groups. |
+6. You may need a Global Administrator to consent to required API permissions first time if have not used these tool before. This can be done after sign-in by pressing same icon in upper right corner once more and press "Request Consent". Command Graph Command Line Tools application will be registered in Entra. Feel free to remove it after import or remove at least admin consent.
 
-In the Windows tool UI, select **Bulk > Import**, use the appropriate policy-set folder, and select only its intended workload types. Where available, enable **Add Object name to path** for workload-folder discovery. Inspect the actual selection rather than selecting the repository root. Leave **Import assignments** unchecked.
+   <img width="294" height="145" alt="image" src="https://github.com/user-attachments/assets/675ebdc9-dc87-4633-bfa5-fbb92f7ba53d" />
 
-`MigrationTable.json` is metadata for resolving references, **not a policy to upload**. Its tenant information describes the source environment, not your target tenant. Leaving assignment import unchecked does not remove CA's built-in user/role/app conditions: review those separately. Importing an exclusion group does not populate or verify emergency-access membership.
 
-> [!WARNING]
-> **Always import Conditional Access in Off mode.** All three checked-in policies are disabled, but verify the result rather than relying on the export. CA includes Android, and CA210 includes all users. CA110/CA210 can deny access to unenrolled BYOD even when CA005 app protection succeeds.
+7. After sign in and admin consent navigate to Bulk button in the left upper corner and press Import
 
-## Review, pilot, and roll out
+   <img width="273" height="202" alt="image" src="https://github.com/user-attachments/assets/9e8b32ce-93fe-4ef8-9c19-325d138add8c" />
 
-1. Review import results and command-window output for errors. Inspect each resource in Intune/Entra; check settings, target app references, tenant/group mappings, scope tags, and duplicate objects. Stop if references are unresolved.
-2. Verify emergency-access accounts, exclusion-group membership, and recovery access in the target tenant. Confirm combined CA behavior with **What If**, sign-in logs, and an approved report-only phase; keep policies Off until those prerequisites are met.
-3. Assign app protection to intended pilot users; assign device policies to the reviewed enrolled-device population. Set Defender deployment to **Required** for the corporate pilot and review supported installation/removal controls separately.
-4. Validate work-account app protection, PIN/data-sharing/printing/screen-capture behavior on supported apps, compliance checks and zero-grace actions, Defender onboarding/protection/risk reporting, and successful permitted sign-ins. Include an unenrolled BYOD test if that scenario is intended.
-5. Check VPN compatibility, user interaction, privacy, and noncompliance recovery. Only then move CA from report-only to approved staged enforcement and expand assignments.
+8. Download hole project and unzip
 
-Report-only results are not proof that app protection is enforced: Microsoft's guidance notes that this grant can show report-only failure before enforcement. Validate actual protected-app behavior in a controlled, narrowly scoped enforcement pilot as well.
+<img width="401" height="373" alt="image" src="https://github.com/user-attachments/assets/99f1e353-44f6-4bd5-85d7-0c2af71925f3" />
 
-Do not re-import repeatedly to repair errors without checking for duplicate objects. Use [Reporting issues](reporting-issues.md) for reproducible repository or documentation problems.
+9. Choose Bulk-> Import and find right folder
+   
+   <img width="391" height="411" alt="image" src="https://github.com/user-attachments/assets/e03b2025-83fd-45c0-9122-25f29fbb3e69" />
+   
+10. Check "Add Object name to path" and Press Import
+
+   <img width="2256" height="861" alt="image" src="https://github.com/user-attachments/assets/ec182c21-9982-4f57-ae03-07022f66fbff" />

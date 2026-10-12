@@ -1,39 +1,70 @@
 # 📖 Policy naming
 
-[Public documentation](README.md) | [Repository preview](../../README.preview.md)
+[Documentation index](README.md) | [Repository README](../../README.md)
 
-The existing iOS README documents this descriptive convention:
+The original file-structure and naming text follows verbatim. The active two-package layout is documented separately in [File structure](file-structure.md).
+
+## 📂 File Structure
+
+All files are organized into categories
+
+```text
+/ALSO-Microsoft-Security-MacOS
+
+├── ALSO_IOS_MDE_AUTO_ONBOARDING/
+|── Applications 1 application
+|── DeviceConfiguration 1 Device Configuration policy templates
+|── AppConfigurationManagedDevice 1 App Configuration policy template
+
+├──ALSO_IOS_APP_PROTECTION_POLICIES/AppPro
+|── AppPro 1 App Protection policy template
+
+├──ALSO_IOS_APP_COMPLIANCE_POLICIES/CompliancePolicies'
+|── CompliancePolicies 4 App Compliance policy templates
+
+├──ALSO_IOS_CA_POLICIES/ConiditionalAccess
+|── ConditionalAccess 3 Conditional Access policies
+|── Groups 3 Conditional groups
+|── MigrationTable.json
+
+
+```
+
+### License Tag Description
+
+| Tag | Minimum Required License |
+|:---:|--------------------------|
+| **BP** | Microsoft 365 Business Premium |
+
+---
+
+## 📖 Naming Convention
+
+All policy templates follow the naming format below:
 
 ```text
 <ALSO>-<ImpactLevel>-<MinimumLicense>-<BaselineLevel>-<Version>-<OS>-<Main Category>-<Sub Category>-<Settings>-<Assignment>
 ```
 
-This is a reading guide, **not a claim that every checked-in export follows the full format**. The actual app protection, app configuration, and VPN names put the category before a bracketed platform/ownership label and omit a human-readable version. Compliance and CA use different formats.
+### Example
 
-## 🧩 Naming components
+```text
+ALSO – LI – BP – Basic – v1.0– iOS/iPadOS BYOD or Corp –
+```
 
-| Component | Meaning | Examples / caveats |
-| --- | --- | --- |
-| `ALSO` | Template provider | Descriptive prefix, not a tenant identifier. |
-| Impact | Expected implementation impact | `LI` low, `MI` medium, `HI` high; full-style exports here use `MI`. Test actual user impact. |
-| MinimumLicense | Source license classification | `BP` means Microsoft 365 Business Premium in the existing README. Verify current entitlement per setting. |
-| BaselineLevel | Baseline label | `Basic` appears in full-style names; there are no Basic/Adv build packages in this repository. |
-| Version | Human-readable policy version, when present | The documented convention allows `v1.0`; current full-style names omit it. Graph metadata versions are not this name component. |
-| OS / ownership | Target platform and intended scenario | Display names use `iOS/iPadOS`, with `BYOD`, `Corp`, or `BYOD and Corp`; filenames use `iOSiPadOS`. |
-| Category / settings | Resource area and purpose | App Protection, App Configuration, DeviceConfig/VPN, Compliance. |
-| Assignment | Intended scope suffix, when present | `D` device, `U` user. A suffix does not create or prove an assignment. |
+---
 
-## 🗂️ Actual formats
+## 🧩 Naming Components
 
-| Resource | Observed pattern / example |
-| --- | --- |
-| App protection | `ALSO- MI- BP- Basic -App Protection- [iOS/iPadOS - BYOD and Corp] - Microsoft 365 apps` |
-| App configuration | `ALSO- MI- BP- Basic - App Configuration- [iOS/iPadOS - Corp] - Defender Configuration - D` |
-| VPN configuration | `ALSO- MI- BP- Basic - DeviceConfig- VPN- [iOS/iPadOS -Corp]- Auto Enrollment to MDE - D` |
-| Compliance | `ALSO - Compliance - iOS/iPadOS - <BYOD or Corp> - <check> - D` |
-| Conditional Access | `BP-ALSO-CA<number>-<audience>-<apps>-<platform>-...-Grant-<control>`; current identifiers are CA005, CA110, CA210. |
-
-Names retain inconsistent spacing and existing spelling. Exports have not been renamed or normalized for this preview. See [Naming exceptions](short-name-exceptions.md) before interpreting names as scope or enforcement.
-
-> [!NOTE]
-> Settings, conditions, references, and actual target assignments take precedence over names. Use [File structure](file-structure.md) and inspect the selected JSON before deployment.
+| Component | Description |
+|-----------|-------------|
+| **ALSO** | Company providing the policy template to have a better control |
+| **Impact** | Impact level of policy, low (LI), medium (MI) or high (HI) |
+| **MinimumLicense** | Minimum Microsoft license required to use the policy |
+| **BaselineLevel** | Baseline level of policy, Basic, Advanced |
+| **Version** | Policy version, v1.0, v1.1 etc|
+| **iOS/iPadOS** | Operating system |
+| **MainCategory** | Name of main category, Device Configuration, Device Compliance etc|
+| **SubCategory** | Name of sub category, MDE, AV, Disk etc|
+| **Settings** | Short settings description |
+| **Assignment** | Assignment scope- device (D) or user (U)|

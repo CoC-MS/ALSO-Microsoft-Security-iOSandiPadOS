@@ -1,25 +1,20 @@
-# 🛡️ ALSO Microsoft Security - iOS and iPadOS documentation
+# 🛡️ ALSO Microsoft Security iOS and iPadOS documentation
 
-[Repository preview](../../README.preview.md)
-
-Partner-facing guidance for reviewing and deploying this repository's iOS/iPadOS exports.
-
-> [!NOTE]
-> This documentation accompanies `README.preview.md`. The main README remains unchanged; switching to the preview is a manual decision.
-
-> [!IMPORTANT]
-> Confirm licensing, enrollment support, settings, tenant references, dependencies, and assignments. Validate in a pilot and maintain a recovery plan before production rollout.
+[Repository README](../../README.md)
 
 | Page | Purpose |
 | --- | --- |
-| 🚀 **[General prerequisites](general-prerequisites.md)** | Check licensing, access, and deployment readiness. |
-| 📱 **[iOS/iPadOS prerequisites](ios-ipados-prerequisites.md)** | Prepare Apple enrollment and Defender integration; distinguish BYOD from corporate management. |
-| 📖 **[Policy naming](policy-naming.md)** | Understand naming components and actual export formats. |
-| 🏷️ **[Naming exceptions](short-name-exceptions.md)** | Review short names and names that do not fully describe their settings. |
-| 📂 **[File structure](file-structure.md)** | Locate all four policy sets and import metadata. |
-| 📥 **[How to import](how-to-import.md)** | Import selected exports, resolve dependencies, and pilot safely. |
-| 🐛 **[Reporting issues](reporting-issues.md)** | Report reproducible problems with sanitized details. |
+| 📦 **[Licensing and package guidance](licensing-and-packages.md)** | Choose between the two standalone cumulative packages and review all preserved licensing wording. |
+| 📖 **[Policy and configuration descriptions](policy-collections.md)** | Review the authored workload descriptions and warnings. |
+| 🚀 **[General prerequisites](general-prerequisites.md)** | Review the authored role and pre-import requirements. |
+| 📱 **[iOS/iPadOS prerequisites](ios-ipados-prerequisites.md)** | Follow the authored Defender, Intune, Apple, and version preparation. |
+| ☁️ **[Defender for Cloud Apps](defender-cloud-apps.md)** | Review the exact MDCA and licensing statements. |
+| 🧩 **[Dependencies and special handling](dependencies-and-errors.md)** | Find onboarding, privacy, and Conditional Access dependencies. |
+| 📖 **[Policy naming](policy-naming.md)** | Review the authored structure and naming convention. |
+| 🏷️ **[Naming exceptions](short-name-exceptions.md)** | Interpret existing export names without renaming artifacts. |
+| 📂 **[File structure](file-structure.md)** | Compare package membership and workload paths. |
+| 📥 **[How to import](how-to-import.md)** | Follow the original illustrated import instructions. |
+| 🐛 **[Reporting issues](reporting-issues.md)** | Use the original issue destination. |
+| 🧾 **[Authored README preservation copy](authored-readme.md)** | Read the complete pre-restructure README verbatim. |
 
----
-
-Start with the prerequisites, select a deployment scenario and its resources using [File structure](file-structure.md), then follow [How to import](how-to-import.md). The repository's [security and usage notice](../../SECURITY) and [license](../../LICENSE) remain applicable.
+The [security information](../../SECURITY) and [licence](../../LICENSE) apply to both packages.
