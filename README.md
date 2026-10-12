@@ -42,12 +42,6 @@ The **Business Premium folder** is designed for organizations using Microsoft 36
 | Microsoft 365 F3 | ⚠️ Supported with limitations (without full Defender for Cloud Apps experience) |
 | Microsoft 365 F1 | ⚠️ Intune settings only. Defender settings are not supported. |
 
-#### Microsoft 365 F3 Limitations
-
-For Microsoft 365 F3, only the following Microsoft Defender security settings are supported:
-
-- Defender Antivirus
-
 
 > **Important:** Microsoft 365 F1 supports deployment of Intune configuration settings only. Microsoft Defender security policy settings included in this repository are not supported with F1 licensing.
 
