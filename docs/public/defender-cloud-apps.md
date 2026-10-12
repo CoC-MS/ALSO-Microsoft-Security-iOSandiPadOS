@@ -17,4 +17,3 @@ The source README contains the following exact licensing limitations:
 | Microsoft 365 F3 | ⚠️ Supported with limitations (without full Defender for Cloud Apps experience) |
 | Microsoft 365 F1 | ⚠️ Intune settings only. Defender settings are not supported. |
 
-No separate Defender for Cloud Apps export or E5-only artifact exists in the current source set. Both cumulative packages therefore contain the same 15 files. Review feature entitlement and the actual iOS/iPadOS export settings before deployment; no macOS-specific Custom Indicators or Cloud App Catalog workflow is asserted here.
