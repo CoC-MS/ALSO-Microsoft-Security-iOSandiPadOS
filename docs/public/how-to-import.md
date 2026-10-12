@@ -29,6 +29,9 @@
 
 8. Download hole project and unzip
 
+> [!WARNING]
+> **We highly recommend extracting the downloaded folder to a OneDrive location. Otherwise, some policies with long filenames may fail to extract.**
+
 <img width="401" height="373" alt="image" src="https://github.com/user-attachments/assets/99f1e353-44f6-4bd5-85d7-0c2af71925f3" />
 
 9. Choose Bulk-> Import and find right folder

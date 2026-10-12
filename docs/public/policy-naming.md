@@ -1,6 +1,6 @@
 # Policy naming
 
-[Documentation index](README.md) | [Short-name exceptions](short-name-exceptions.md)
+[Documentation index](README.md)
 
 ## 📖 Naming Convention
 

@@ -29,7 +29,7 @@ The **E5 folder** is intended for organizations that have access to full experie
 | Microsoft 365 F3 + Defender Suite | ✅ Full support |
 | Microsoft 365 F1 + Defender Suite | ✅ Full support |
 
-### ✅ BP Folder (Limited Experience)
+### ⚠️ BP Folder (Limited Experience)
 
 Package: [`ALSO_IOS_BP`](ALSO_IOS_BP)
 
