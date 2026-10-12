@@ -14,10 +14,9 @@
 Choose one standalone package. 
 
 ### ✅ E5 Folder (Full Experience)
+ 
 
-Package: 
-
-Mapped package: [`ALSO_IOS_E5`](ALSO_IOS_E5)
+Package: [`ALSO_IOS_E5`](ALSO_IOS_E5)
 
 The **E5 folder** is intended for organizations that have access to full experience of Defender for Cloud apps with these licenses. 
 
@@ -32,9 +31,7 @@ The **E5 folder** is intended for organizations that have access to full experie
 
 ### ✅ BP Folder (Limited Experience)
 
-Package: 
-
-Mapped package: [`ALSO_IOS_BP`](ALSO_IOS_BP)
+Package: [`ALSO_IOS_BP`](ALSO_IOS_BP)
 
 The **Business Premium folder** is designed for organizations using Microsoft 365 Business Premium and other licenses with partial feature compatibility.
 
