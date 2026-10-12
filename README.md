@@ -22,7 +22,7 @@ Package:
 
 Mapped package: [`ALSO_IOS_E5`](ALSO_IOS_E5)
 
-The **E5 folder** is intended for organizations that have access to the complete Microsoft Security stack used by these templates.
+The **E5 folder** is intended for organizations that have access to full experience of Defender for Cloud apps with these licenses. 
 
 | License | Supported |
 |----------|----------|
