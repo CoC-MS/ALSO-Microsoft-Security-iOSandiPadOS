@@ -1,8 +1,6 @@
-# 🐛 Reporting issues
+# Reporting issues
 
-[Documentation index](README.md) | [Repository README](../../README.md)
-
-The authored issue guidance follows verbatim.
+[Documentation index](README.md)
 
 ## Issues?
 

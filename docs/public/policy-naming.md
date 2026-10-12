@@ -1,44 +1,14 @@
-# 📖 Policy naming
+# Policy naming
 
-[Documentation index](README.md) | [Repository README](../../README.md)
+[Documentation index](README.md) | [Short-name exceptions](short-name-exceptions.md)
 
-The original file-structure and naming text follows verbatim. The active two-package layout is documented separately in [File structure](file-structure.md).
-
-## 📂 File Structure
-
-All files are organized into categories
-
-```text
-/ALSO-Microsoft-Security-MacOS
-
-├── ALSO_IOS_MDE_AUTO_ONBOARDING/
-|── Applications 1 application
-|── DeviceConfiguration 1 Device Configuration policy templates
-|── AppConfigurationManagedDevice 1 App Configuration policy template
-
-├──ALSO_IOS_APP_PROTECTION_POLICIES/AppPro
-|── AppPro 1 App Protection policy template
-
-├──ALSO_IOS_APP_COMPLIANCE_POLICIES/CompliancePolicies'
-|── CompliancePolicies 4 App Compliance policy templates
-
-├──ALSO_IOS_CA_POLICIES/ConiditionalAccess
-|── ConditionalAccess 3 Conditional Access policies
-|── Groups 3 Conditional groups
-|── MigrationTable.json
-
-
-```
+## 📖 Naming Convention
 
 ### License Tag Description
 
 | Tag | Minimum Required License |
 |:---:|--------------------------|
 | **BP** | Microsoft 365 Business Premium |
-
----
-
-## 📖 Naming Convention
 
 All policy templates follow the naming format below:
 

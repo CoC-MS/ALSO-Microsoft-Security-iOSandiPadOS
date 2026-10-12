@@ -1,15 +1,9 @@
-# 🏷️ Naming exceptions
+# 🏷️ Short-name exceptions
 
-[Documentation index](README.md) | [Repository README](../../README.md) | [Policy naming](policy-naming.md)
+[Documentation index](README.md) | [Policy naming](policy-naming.md)
 
-Existing export filenames remain unchanged inside both packages. Notable source names include:
+Not every exported resource uses the common policy naming pattern. This repository includes Conditional Access resources named with a `BP-ALSO-CA...` prefix, group resources with shorter `ALSO-...` or `BP-ALSO-...` names, an application named `Microsoft Defender Security.json`, and a `MigrationTable.json`.
 
-| Existing name or fragment | Package location |
-| --- | --- |
-| `Microsoft Defender Security.json` | `ALSO_IOS_MDE_AUTO_ONBOARDING/Applications` |
-| `ALSO-CA-BSAccounts- Exclude.json` | `ALSO_IOS_CA_POLICIES/Groups` |
-| `RequireAppProtectionPoliciy` | Existing CA005 filename spelling |
-| `ConiditionalAccess` | Authored file-structure wording |
-| `ConnditionalAccess` | Authored policy-description wording |
+Compliance export names also differ from the descriptive naming example. Existing names include inconsistent spacing, hyphens and typographic dashes, capitalization such as `iOSAndAndroid`/`iOSandAndroid`, the filename spelling `RequireAppProtectionPoliciy`, and authored wording such as `ConiditionalAccess`/`ConnditionalAccess`.
 
-Do not rename export files when selecting a package. Both packages retain identical paths and bytes beneath their package root.
+These are existing export names, not naming guidance for new resources. The export filenames and file contents remain unchanged in both packages.

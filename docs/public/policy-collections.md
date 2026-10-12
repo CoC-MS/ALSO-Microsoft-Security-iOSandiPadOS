@@ -1,8 +1,6 @@
 # 📖 Policy and configuration descriptions
 
-[Documentation index](README.md) | [Repository README](../../README.md)
-
-The authored descriptions and warnings follow verbatim.
+[Documentation index](README.md)
 
 ## What's included in ALSO_IOS_MDE_AUTO_ONBOARDING?
 

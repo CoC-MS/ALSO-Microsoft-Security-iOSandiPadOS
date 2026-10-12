@@ -1,35 +1,57 @@
-# 📂 File structure
+# File structure
 
-[Documentation index](README.md) | [Repository README](../../README.md)
+[Documentation index](README.md)
 
-The repository exposes exactly two standalone top-level package folders:
+## 📂 File Structure
+
+The repository exposes exactly two cumulative, standalone packages:
 
 ```text
-ALSO_IOS_BP/
-├── ALSO_IOS_APP_PROTECTION_POLICIES/
-├── ALSO_IOS_CA_POLICIES/
-├── ALSO_IOS_COMPLIANCE_POLICIES/
-└── ALSO_IOS_MDE_AUTO_ONBOARDING/
-
-ALSO_IOS_E5/
-├── ALSO_IOS_APP_PROTECTION_POLICIES/
-├── ALSO_IOS_CA_POLICIES/
-├── ALSO_IOS_COMPLIANCE_POLICIES/
-└── ALSO_IOS_MDE_AUTO_ONBOARDING/
+/
+├── ALSO_IOS_BP/                  15 BP-compatible JSON artifacts
+├── ALSO_IOS_E5/                  15 cumulative JSON artifacts
+├── docs/public/
+├── LICENSE
+├── README.md
+└── SECURITY
 ```
 
-| Workload | BP | E5 |
-| --- | ---: | ---: |
-| App protection policies | 1 | 1 |
-| Conditional Access policies | 3 | 3 |
-| Conditional Access groups | 3 | 3 |
-| Conditional Access migration table | 1 | 1 |
-| Compliance policies | 4 | 4 |
-| Defender application | 1 | 1 |
-| Defender app configuration | 1 | 1 |
-| Defender device configuration | 1 | 1 |
-| **Total JSON files** | **15** | **15** |
+Both packages currently contain the same source membership because the repository has no E5-only source artifacts.
 
-All current artifacts are Business Premium-compatible according to the source README and filename markers. There are no E5-only source artifacts, so `ALSO_IOS_E5` is cumulative with identical membership.
+| Workload folder in each package | JSON files | Classification |
+| --- | ---: | --- |
+| `ALSO_IOS_MDE_AUTO_ONBOARDING` | 3 | BP |
+| `ALSO_IOS_APP_PROTECTION_POLICIES` | 1 | BP |
+| `ALSO_IOS_COMPLIANCE_POLICIES` | 4 | BP |
+| `ALSO_IOS_CA_POLICIES` | 7 | BP |
+| **Total** | **15** | **15 BP-compatible artifacts** |
 
-The original file-structure wording is preserved in [Policy naming](policy-naming.md) and in the complete [authored README preservation copy](authored-readme.md).
+## Historical source layout
+
+The following original wording is retained to document how the source artifacts were organized before packaging:
+
+All files are organized into categories
+
+```text
+/ALSO-Microsoft-Security-MacOS
+
+├── ALSO_IOS_MDE_AUTO_ONBOARDING/
+|── Applications 1 application
+|── DeviceConfiguration 1 Device Configuration policy templates
+|── AppConfigurationManagedDevice 1 App Configuration policy template
+
+├──ALSO_IOS_APP_PROTECTION_POLICIES/AppPro
+|── AppPro 1 App Protection policy template
+
+├──ALSO_IOS_APP_COMPLIANCE_POLICIES/CompliancePolicies'
+|── CompliancePolicies 4 App Compliance policy templates
+
+├──ALSO_IOS_CA_POLICIES/ConiditionalAccess
+|── ConditionalAccess 3 Conditional Access policies
+|── Groups 3 Conditional groups
+|── MigrationTable.json
+
+
+```
+
+See [Policy and configuration descriptions](policy-collections.md) for the original explanations and [How to import](how-to-import.md) for the illustrated workflow.

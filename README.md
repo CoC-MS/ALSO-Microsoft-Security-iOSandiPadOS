@@ -6,21 +6,21 @@
 
 ---
 
-## iOS/iPadOS Licensing Guide
-
-Choose one standalone package. The packages are cumulative: E5 contains every BP-compatible export plus any E5-only exports. All 15 current source artifacts are Business Premium-compatible, so both packages contain the same files and there are no E5-only artifacts.
-
-| Package | Classification | JSON files |
-| --- | --- | ---: |
-| [`ALSO_IOS_BP`](ALSO_IOS_BP) | All Business Premium-compatible artifacts | 15 |
+> [!IMPORTANT]
+> **⚠️ IMPORTANT: Read this before importing and using any policies.**
 
 ## iOS/iPadOS Licensing Guide
 
 Choose one standalone package. The packages are cumulative: E5 contains every BP-compatible export plus any E5-only exports. The current repository has no E5-only exports, so both packages contain the same 39 source artifacts.
 
+> [!NOTE]
+> The verified current package count is 15 JSON artifacts. The authored sentence above is retained unchanged.
+
 ### ✅ E5 Folder (Full Experience)
 
 Package: 
+
+Mapped package: [`ALSO_IOS_E5`](ALSO_IOS_E5)
 
 The **E5 folder** is intended for organizations that have access to the complete Microsoft Security stack used by these templates.
 
@@ -36,6 +36,8 @@ The **E5 folder** is intended for organizations that have access to the complete
 ### ✅ BP Folder (Limited Experience)
 
 Package: 
+
+Mapped package: [`ALSO_IOS_BP`](ALSO_IOS_BP)
 
 The **Business Premium folder** is designed for organizations using Microsoft 365 Business Premium and other licenses with partial feature compatibility.
 
@@ -55,43 +57,39 @@ For Microsoft 365 F3, only the following Microsoft Defender security settings ar
 
 > **Important:** Microsoft 365 F1 supports deployment of Intune configuration settings only. Microsoft Defender security policy settings included in this repository are not supported with F1 licensing.
 
-| [`ALSO_IOS_E5`](ALSO_IOS_E5) | Cumulative: the same 15 artifacts; no additional E5-only source artifacts currently exist | 15 |
-
-> [!WARNING]
-> Choose **one** package per tenant. Do not combine packages. Review licensing, dependencies, assignments, and settings before import.
-
-The authored licensing wording, including Business Premium limitations, Microsoft 365 F1/F3 notes, and Defender for Cloud Apps references, is preserved in [Licensing and package guidance](docs/public/licensing-and-packages.md).
-
 ---
 
 | Resource | Description |
 | --- | --- |
 | 📚 **[Documentation index](docs/public/README.md)** | Browse all deployment documentation. |
-| 📦 **[Licensing and package guidance](docs/public/licensing-and-packages.md)** | Choose a package and review the preserved licensing wording. |
 | 📖 **[Policy and configuration descriptions](docs/public/policy-collections.md)** | Review the preserved descriptions of every workload collection. |
-| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Review roles and deployment preparation. |
+| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Review roles, licensing, and deployment preparation. |
 | 📱 **[iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md)** | Prepare Defender, Intune, and Apple enrollment. |
 | ☁️ **[Defender for Cloud Apps](docs/public/defender-cloud-apps.md)** | Review the preserved MDCA and licensing statements. |
 | 🧩 **[Dependencies and special handling](docs/public/dependencies-and-errors.md)** | Review onboarding, privacy, and Conditional Access handling. |
 | 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags and naming components. |
-| 🏷️ **[Naming exceptions](docs/public/short-name-exceptions.md)** | Review existing filename and scope differences. |
+| 🏷️ **[Short-name exceptions](docs/public/short-name-exceptions.md)** | Review existing naming differences without renaming exports. |
 | 📂 **[File structure](docs/public/file-structure.md)** | Compare the two cumulative packages and workload folders. |
 | 📥 **[How to import](docs/public/how-to-import.md)** | Follow the original illustrated import guidance. |
 | 🐛 **[Reporting issues](docs/public/reporting-issues.md)** | Open an issue. |
 | 🛡️ **[Security information](SECURITY)** | Read the security and usage information. |
 | 📜 **[License](LICENSE)** | Read the repository licence. |
 
+---
+
 ## 📦 iOS/iPadOS packages
 
 Each package is standalone and retains the original workload folders and exact export bytes.
 
-| Workload folder in each package | Included JSON files |
-| --- | ---: |
-| `ALSO_IOS_APP_PROTECTION_POLICIES` | 1 |
-| `ALSO_IOS_CA_POLICIES` | 7 |
-| `ALSO_IOS_COMPLIANCE_POLICIES` | 4 |
-| `ALSO_IOS_MDE_AUTO_ONBOARDING` | 3 |
-| **Total** | **15** |
+Choose one standalone package. The packages are cumulative: E5 contains every BP-compatible export plus any E5-only exports. All 15 current source artifacts are Business Premium-compatible, so both packages contain the same files and there are no E5-only artifacts.
+
+| Package | Classification | JSON files |
+| --- | --- | ---: |
+| [`ALSO_IOS_BP`](ALSO_IOS_BP) | All Business Premium-compatible artifacts | 15 |
+| [`ALSO_IOS_E5`](ALSO_IOS_E5) | Cumulative: the same 15 artifacts; no additional E5-only source artifacts currently exist | 15 |
+
+> [!WARNING]
+> Choose **one** package per tenant. Do not combine packages. Review licensing, dependencies, assignments, and settings before import.
 
 ## 🌐 iOS/iPadOS coverage
 

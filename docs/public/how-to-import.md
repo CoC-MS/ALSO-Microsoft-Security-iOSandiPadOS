@@ -1,10 +1,12 @@
 # 📥 How to import
 
-[Documentation index](README.md) | [Repository README](../../README.md)
-
-The original illustrated import instructions follow verbatim.
+[Documentation index](README.md)
 
 ## How to import?
+
+> [!IMPORTANT]
+> **Always import Conditional Access policies in OFF mode**:
+> Ensure you have Conditional Access Administrator role before importing Conditional Access policies.
 
 1. Download Micke M Intune Management Tool from here:  https://github.com/Micke-K/IntuneManagement
 2. Extract folder and Start with start.cmd in the folder (works without local administrator rights on Windows and MacOS)
@@ -36,3 +38,7 @@ The original illustrated import instructions follow verbatim.
 10. Check "Add Object name to path" and Press Import
 
    <img width="2256" height="861" alt="image" src="https://github.com/user-attachments/assets/ec182c21-9982-4f57-ae03-07022f66fbff" />
+
+## After importing
+
+Review imported settings, tenant-specific references, exclusions, and assignments before assigning policies. Keep Conditional Access policies OFF until they have been validated with pilot users and emergency-access exclusions.
