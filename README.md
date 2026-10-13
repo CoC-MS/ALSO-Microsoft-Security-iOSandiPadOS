@@ -53,7 +53,7 @@ The **Business Premium folder** is designed for organizations using Microsoft 36
 | 📖 **[Policy and configuration descriptions](docs/public/policy-collections.md)** | Review the preserved descriptions of every workload collection. |
 | 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Review roles, licensing, and deployment preparation. |
 | 📱 **[iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md)** | Prepare Defender, Intune, and Apple enrollment. |
-| ☁️ **[Defender for Cloud Apps](docs/public/defender-cloud-apps.md)** | Review the preserved MDCA and licensing statements. |
+| ☁️ **[Defender for Cloud Apps/Defender for Business Custom Indicators and Web Content Filtering](docs/public/defender-cloud-apps.md)** | Review which settings needs to be turned on and all limitations. |
 | 🧩 **[Dependencies and special handling](docs/public/dependencies-and-errors.md)** | Review onboarding, privacy, and Conditional Access handling. |
 | 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags and naming components. |
 | 📂 **[File structure](docs/public/file-structure.md)** | Compare the two cumulative packages and workload folders. |
