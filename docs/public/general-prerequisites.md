@@ -28,6 +28,7 @@ Use [iOS/iPadOS prerequisites](ios-ipados-prerequisites.md) for the original ser
 
 > [!IMPORTANT]
 > **PLEASE ENSURE THAT YOU HAVE COMPLETED THESE STEPS, BEFORE YOU START IMPORTING**:
+> ALSO DON'T RECCOMEND TO ONBOARD DEVICES WITH WORK PROFILE TO DEFENDER FOR PRIVACY REASONS, ONLY FULLY MANAGED IOS/IPAD DEVICES. 
 
 **Required administrator roles to do these steps**
 
