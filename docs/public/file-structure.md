@@ -25,8 +25,3 @@ Both packages currently contain the same source membership because the repositor
 | `ALSO_IOS_COMPLIANCE_POLICIES` | 4 | BP |
 | `ALSO_IOS_CA_POLICIES` | 7 | BP |
 | **Total** | **15** | **15 BP-compatible artifacts** |
-
-
-```
-
-See [Policy and configuration descriptions](policy-collections.md) for the original explanations and [How to import](how-to-import.md) for the illustrated workflow.
