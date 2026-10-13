@@ -8,7 +8,6 @@
 | 🚀 **[General prerequisites](general-prerequisites.md)** | Check licensing, roles, and deployment preparation. |
 | 📱 **[iOS/iPadOS prerequisites](ios-ipados-prerequisites.md)** | Prepare Defender, Intune, and Apple enrollment. |
 | ☁️ **[Defender for Cloud Apps/Defender for Business Custom Indicators and Web Content Filtering](defender-cloud-apps.md)** | Review which settings needs to be turned on and all limitations. |
-| 🧩 **[Dependencies and special handling](dependencies-and-errors.md)** | Review onboarding, privacy, and Conditional Access handling. |
 | 📖 **[Policy naming](policy-naming.md)** | Understand license tags and naming components. |
 | 📂 **[File structure](file-structure.md)** | Compare packages and find each workload. |
 | 📥 **[How to import](how-to-import.md)** | Follow the original illustrated import guidance. |
