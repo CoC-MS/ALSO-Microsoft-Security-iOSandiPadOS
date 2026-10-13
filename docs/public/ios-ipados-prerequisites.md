@@ -14,16 +14,6 @@ Security Administrator and Intune Administrator roles + Conditional Access Admin
 > [!IMPORTANT]
 > **Always import Conditional Access policies in OFF mode**:
 
-**Device types supported** 
-   - Works with both **personally-owned devices (work profile)** and **corporate-owned devices**
-
-**Supported iOS versions**
-
-Per September 2026:
-
-iOS or iPadOS 17 or newer
-
-Reference: Microsoft Learn
 
 1. **Verify Defender for Business/Endpoint availability**
    - Go to [security.microsoft.com](https://security.microsoft.com)  
