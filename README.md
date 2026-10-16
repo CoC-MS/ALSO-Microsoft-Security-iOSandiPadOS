@@ -11,7 +11,7 @@
 
 ## 🚀 Getting started
 
-1. Choose one package using the licensing guide above.
+1. Choose one package using the licensing guide below.
 2. Read [General prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md), [Defender for Cloud Apps](docs/public/defender-cloud-apps.md), and [Dependencies and special handling](docs/public/dependencies-and-errors.md).
 3. Review the exact workload descriptions in [Policy and configuration descriptions](docs/public/policy-collections.md).
 4. 🚀 Assign reviewed policies to a pilot group, check policy deployment reports and user impact, then expand in stages.
