@@ -11,10 +11,8 @@
 
 ## 🚀 Getting started
 
-1. Choose one package using the licensing guide below.
-2. Read [General prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md), [ Defender for Cloud Apps/Defender for Business Custom Indicators and Web Content Filtering](docs/public/defender-cloud-apps.md), and [Dependencies and special handling](docs/public/dependencies-and-errors.md).
-3. Review the exact workload descriptions in [Policy and configuration descriptions](docs/public/policy-collections.md).
-4. 🚀 Assign reviewed policies to a pilot group, check policy deployment reports and user impact, then expand in stages.
+1. Review the [general prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md), [policy and configuration descriptions](docs/public/policy-collections.md) for dependencies and special handling, [reporting issues](docs/public/reporting-issues.md) for errors, and [security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/security). Use the [iOS/iPadOS licensing guide](#iosipados-licensing-guide) to choose exactly one package: [`ALSO_IOS_BP`](ALSO_IOS_BP/) or [`ALSO_IOS_E5`](ALSO_IOS_E5/).
+2. Follow [How to import](docs/public/how-to-import.md) for package extraction and import guidance.
 
 For controlled rollouts, we recommend using Microsoft's [deployment plans](https://learn.microsoft.com/en-us/intune/device-management/deployments/overview). This Intune feature is currently in public preview.
 
