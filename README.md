@@ -13,8 +13,11 @@
 <a id="getting-started"></a>
 ## 🚀 Getting started
 
-1. Review the [general prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS requirements](docs/public/ios-ipados-prerequisites.md), [dependencies and special handling](docs/public/policy-collections.md), [error handling](docs/public/reporting-issues.md), and [security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/security). Choose exactly one package using the licensing guide below: [`ALSO_IOS_BP`](ALSO_IOS_BP) or [`ALSO_IOS_E5`](ALSO_IOS_E5).
-2. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
+1. Review the [general prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS requirements](docs/public/ios-ipados-prerequisites.md), [dependencies and special handling](docs/public/policy-collections.md), [error handling](docs/public/reporting-issues.md), and [security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/security).
+2. Choose exactly one package using the licensing guide below: [`ALSO_IOS_BP`](ALSO_IOS_BP) or [`ALSO_IOS_E5`](ALSO_IOS_E5).
+3. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
+4. Assign reviewed policies to a pilot group, check policy deployment reports and user impact, then expand in stages.
+
 
 For controlled rollouts, we recommend using Microsoft's [deployment plans](https://learn.microsoft.com/en-us/intune/device-management/deployments/overview). This Intune feature is currently in public preview.
 
