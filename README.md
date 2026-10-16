@@ -4,7 +4,7 @@
 
 > [!IMPORTANT]
 > **Works with Business Premium and up.**
-
+   
 ---
 
 > [!IMPORTANT]
