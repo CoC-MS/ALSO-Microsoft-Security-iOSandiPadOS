@@ -2,27 +2,30 @@
 
 > Collection of Microsoft Security policy templates for iOS and iPadOS devices, covering both BYOD (Bring Your Own Device) and corporate-managed devices. Includes automated onboarding to Microsoft Defender, App Protection Policies (MAM), App Configuration Policies, Compliance Policies, and Device Configuration Profiles to help organizations secure mobile devices while maintaining a productive user experience..
 
-**Works with Business Premium and up.**
+> [!IMPORTANT]
+> **Works with Business Premium and up.**
 
 ---
 
 > [!IMPORTANT]
 > **⚠️ IMPORTANT: Read this before importing and using any policies.**
 
+<a id="getting-started"></a>
 ## 🚀 Getting started
 
-1. Review the [general prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md), [policy and configuration descriptions](docs/public/policy-collections.md) for dependencies and special handling, [reporting issues](docs/public/reporting-issues.md) for errors, and [security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/security). Use the [iOS/iPadOS licensing guide](#iosipados-licensing-guide) to choose exactly one package: [`ALSO_IOS_BP`](ALSO_IOS_BP/) or [`ALSO_IOS_E5`](ALSO_IOS_E5/).
-2. Follow [How to import](docs/public/how-to-import.md) for package extraction and import guidance.
+1. Review the [general prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS requirements](docs/public/ios-ipados-prerequisites.md), [dependencies and special handling](docs/public/policy-collections.md), [error handling](docs/public/reporting-issues.md), and [security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/security). Choose exactly one package using the licensing guide below: [`ALSO_IOS_BP`](ALSO_IOS_BP) or [`ALSO_IOS_E5`](ALSO_IOS_E5).
+2. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
 
 For controlled rollouts, we recommend using Microsoft's [deployment plans](https://learn.microsoft.com/en-us/intune/device-management/deployments/overview). This Intune feature is currently in public preview.
 
 **Need help or have feedback?** See [Reporting issues](docs/public/reporting-issues.md) to report problems or suggest improvements.
 
-> **Warning:** All issues are public; do not include sensitive information.
+> [!WARNING]
+> All issues are public; do not include sensitive information.
 
 ---
 
-## Quick navigation
+### Quick navigation
 
 | Section | What you will find |
 | --- | --- |
@@ -32,6 +35,9 @@ For controlled rollouts, we recommend using Microsoft's [deployment plans](https
 | [iOS/iPadOS coverage](#iosipados-coverage) | Areas covered by this repository. |
 | [Documentation](#documentation) | Links to supporting guides and the repository license. |
 
+---
+
+<a id="iosipados-licensing-guide"></a>
 ## iOS/iPadOS Licensing Guide
 
 Choose one standalone package. 
@@ -70,6 +76,7 @@ The **Business Premium folder** is designed for organizations using Microsoft 36
 
 ---
 
+<a id="iosipados-packages"></a>
 ## 📦 iOS/iPadOS packages
 
 Each package is standalone and retains the original workload folders and exact export bytes.
@@ -84,6 +91,7 @@ Choose one standalone package. The packages are cumulative: E5 contains every BP
 > [!WARNING]
 > Choose **one** package per tenant. Do not combine packages. Review licensing, dependencies, assignments, and settings before import.
 
+<a id="iosipados-coverage"></a>
 ## 🌐 iOS/iPadOS coverage
 
 | Area | Included content |
@@ -93,6 +101,7 @@ Choose one standalone package. The packages are cumulative: E5 contains every BP
 | ✅ Compliance | Four compliance policies covering OS version, jailbreak/threat status, PIN/screen lock, and corporate MDE risk. |
 | 🔐 Conditional Access | Three policies, three exclusion groups, and `MigrationTable.json`. |
 
+<a id="documentation"></a>
 ## 📚 Documentation
 
 | Documentation | Overview |
