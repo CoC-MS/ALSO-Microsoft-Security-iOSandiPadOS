@@ -9,6 +9,31 @@
 > [!IMPORTANT]
 > **⚠️ IMPORTANT: Read this before importing and using any policies.**
 
+## 🚀 Getting started
+
+1. Choose one package using the licensing guide above.
+2. Read [General prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md), [Defender for Cloud Apps](docs/public/defender-cloud-apps.md), and [Dependencies and special handling](docs/public/dependencies-and-errors.md).
+3. Review the exact workload descriptions in [Policy and configuration descriptions](docs/public/policy-collections.md).
+4. 🚀 Assign reviewed policies to a pilot group, check policy deployment reports and user impact, then expand in stages.
+
+For controlled rollouts, we recommend using Microsoft's [deployment plans](https://learn.microsoft.com/en-us/intune/device-management/deployments/overview). This Intune feature is currently in public preview.
+
+**Need help or have feedback?** See [Reporting issues](docs/public/reporting-issues.md) to report problems or suggest improvements.
+
+> **Warning:** All issues are public; do not include sensitive information.
+
+---
+
+## Quick navigation
+
+| Section | What you will find |
+| --- | --- |
+| [Getting started](#getting-started) | Prerequisites, download, import, and staged rollout. |
+| [iOS/iPadOS licensing guide](#iosipados-licensing-guide) | License compatibility and limitations. |
+| [iOS/iPadOS packages](#iosipados-packages) | Compare BP and E5 packages. |
+| [iOS/iPadOS coverage](#iosipados-coverage) | Areas covered by this repository. |
+| [Documentation](#documentation) | Links to supporting guides and the repository license. |
+
 ## iOS/iPadOS Licensing Guide
 
 Choose one standalone package. 
@@ -47,32 +72,16 @@ The **Business Premium folder** is designed for organizations using Microsoft 36
 
 ---
 
-| Resource | Description |
-| --- | --- |
-| 📚 **[Documentation index](docs/public/README.md)** | Browse all deployment documentation. |
-| 📖 **[Policy and configuration descriptions](docs/public/policy-collections.md)** | Review the preserved descriptions of every workload collection. |
-| 🚀 **[General prerequisites](docs/public/general-prerequisites.md)** | Review roles, licensing, and deployment preparation. |
-| 📱 **[iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md)** | Prepare Defender, Intune, and Apple enrollment. |
-| ☁️ **[Defender for Cloud Apps/Defender for Business Custom Indicators and Web Content Filtering](docs/public/defender-cloud-apps.md)** | Review which settings needs to be turned on and all limitations. |
-| 📖 **[Policy naming](docs/public/policy-naming.md)** | Understand licence tags and naming components. |
-| 📂 **[File structure](docs/public/file-structure.md)** | Compare the two cumulative packages and workload folders. |
-| 📥 **[How to import](docs/public/how-to-import.md)** | Follow the original illustrated import guidance. |
-| 🐛 **[Reporting issues](docs/public/reporting-issues.md)** | Open an issue. |
-| 🛡️ **[Security information](SECURITY)** | Read the security and usage information. |
-| 📜 **[License](LICENSE)** | Read the repository licence. |
-
----
-
 ## 📦 iOS/iPadOS packages
 
 Each package is standalone and retains the original workload folders and exact export bytes.
 
 Choose one standalone package. The packages are cumulative: E5 contains every BP-compatible export plus any E5-only exports. All 15 current source artifacts are Business Premium-compatible, so both packages contain the same files and there are no E5-only artifacts.
 
-| Package | Classification | JSON files |
-| --- | --- | ---: |
-| [`ALSO_IOS_BP`](ALSO_IOS_BP) | All Business Premium-compatible artifacts | 15 |
-| [`ALSO_IOS_E5`](ALSO_IOS_E5) | Cumulative: the same 15 artifacts; no additional E5-only source artifacts currently exist | 15 |
+| 📦 Package overview | Licence scope | Scope | JSON files |
+| --- | --- | --- | ---: |
+| [`ALSO_IOS_BP`](ALSO_IOS_BP) | Business Premium and up. | All Business Premium-compatible artifacts | 15 |
+| [`ALSO_IOS_E5`](ALSO_IOS_E5) | Business Premium and up. | Cumulative: the same 15 artifacts; no additional E5-only source artifacts currently exist | 15 |
 
 > [!WARNING]
 > Choose **one** package per tenant. Do not combine packages. Review licensing, dependencies, assignments, and settings before import.
@@ -81,14 +90,19 @@ Choose one standalone package. The packages are cumulative: E5 contains every BP
 
 | Area | Included content |
 | --- | --- |
-| Microsoft Defender | One application export, one managed-device app configuration, and one device configuration profile. |
-| App protection | One app protection policy for iOS/iPadOS BYOD and corporate scenarios. |
-| Compliance | Four compliance policies covering OS version, jailbreak/threat status, PIN/screen lock, and corporate MDE risk. |
-| Conditional Access | Three policies, three exclusion groups, and `MigrationTable.json`. |
+| 🔒 Microsoft Defender | One application export, one managed-device app configuration, and one device configuration profile. |
+| 🛡️ App protection | One app protection policy for iOS/iPadOS BYOD and corporate scenarios. |
+| ✅ Compliance | Four compliance policies covering OS version, jailbreak/threat status, PIN/screen lock, and corporate MDE risk. |
+| 🔐 Conditional Access | Three policies, three exclusion groups, and `MigrationTable.json`. |
 
-## 🚀 Getting started
+## 📚 Documentation
 
-1. Choose one package using the licensing guide above.
-2. Read [General prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md), [Defender for Cloud Apps](docs/public/defender-cloud-apps.md), and [Dependencies and special handling](docs/public/dependencies-and-errors.md).
-3. Review the exact workload descriptions in [Policy and configuration descriptions](docs/public/policy-collections.md).
-4. Follow [How to import](docs/public/how-to-import.md). **Always import Conditional Access policies in OFF mode** and use a controlled pilot.
+| Documentation | Overview |
+| --- | --- |
+| 🚀 [General prerequisites](docs/public/general-prerequisites.md) | Review roles, licensing, and deployment preparation. |
+| 📱 [iOS/iPadOS prerequisites](docs/public/ios-ipados-prerequisites.md) | Prepare Defender, Intune, and Apple enrollment. |
+| ☁️ [Defender for Cloud Apps/Defender for Business Custom Indicators and Web Content Filtering](docs/public/defender-cloud-apps.md) | Review which settings needs to be turned on and all limitations. |
+| 📦 [iOS/iPadOS packages](#iosipados-packages) | Compare BP and E5 package scope and contents. |
+| 📖 [Policy naming](docs/public/policy-naming.md) | Understand licence tags and naming components. |
+| 📂 [File structure](docs/public/file-structure.md) | Compare the two cumulative packages and workload folders. |
+| 📜 [License](LICENSE) | Read the repository licence. |
