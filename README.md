@@ -1,9 +1,6 @@
 # 🛡️ ALSO Microsoft Security iOS and iPadOS Policy Templates
 
 > Collection of Microsoft Security policy templates for iOS and iPadOS devices, covering both BYOD (Bring Your Own Device) and corporate-managed devices. Includes automated onboarding to Microsoft Defender, App Protection Policies (MAM), App Configuration Policies, Compliance Policies, and Device Configuration Profiles to help organizations secure mobile devices while maintaining a productive user experience..
-
-> [!IMPORTANT]
-> **Works with Business Premium and up.**
    
 ---
 
@@ -16,7 +13,7 @@
 1. Review the [general prerequisites](docs/public/general-prerequisites.md), [iOS/iPadOS requirements](docs/public/ios-ipados-prerequisites.md), [dependencies and special handling](docs/public/policy-collections.md), [error handling](docs/public/reporting-issues.md), and [security information](https://github.com/CoC-MS/ALSO-Microsoft-Security-iOSandiPadOS/security).
 2. Choose exactly one package using the licensing guide below: [`ALSO_IOS_BP`](ALSO_IOS_BP) or [`ALSO_IOS_E5`](ALSO_IOS_E5).
 3. Follow [How to import](docs/public/how-to-import.md) for extraction and import guidance.
-4. Assign reviewed policies to a pilot group, check policy deployment reports and user impact, then expand in stages.
+4. Assign reviewed policies to a pilot group, check policy deployment reports and device/user impact, then expand in stages.
 
 
 For controlled rollouts, we recommend using Microsoft's [deployment plans](https://learn.microsoft.com/en-us/intune/device-management/deployments/overview). This Intune feature is currently in public preview.
