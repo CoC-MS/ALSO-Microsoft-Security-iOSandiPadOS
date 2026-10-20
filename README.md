@@ -68,7 +68,7 @@ The **Business Premium folder** is designed for organizations using Microsoft 36
 |----------|----------|
 | Microsoft 365 Business Premium | ⚠️ Supported with limitations (without full Defender for Cloud Apps experience) |
 | Microsoft 365 E3 | ⚠️ Supported with limitations (without full Defender for Cloud Apps experience) |
-| Microsoft 365 F3 | ⚠️ Supported with limitations (without full Defender for Cloud Apps experience) |
+| Microsoft 365 F3 | ⚠️ Intune settings only. Defender settings are not supported. |
 | Microsoft 365 F1 | ⚠️ Intune settings only. Defender settings are not supported. |
 
 
