@@ -1,5 +1,7 @@
 # ☁️ Defender for Cloud Apps/Defender for Business Custom Indicators and Web Content Filtering
 
+**Disclaimer:** Licensing prerequisites and feature availability listed on this page may be incorrect, incomplete, or outdated. We strongly recommend verifying all licensing information against the latest official Microsoft licensing documentation before making any purchasing or deployment decisions.
+
 [Documentation index](README.md)
 
 ## What's included in ALSO_IOS_MDE_AUTO_ONBOARDING?
@@ -71,8 +73,6 @@ Direct link: https://security.microsoft.com/securitysettings/endpoints/integrati
 2. Check that Custom Network Indicators and Web Content filtering are toggled ON
 
 <img width="1922" height="1247" alt="image" src="https://github.com/user-attachments/assets/b544ad55-118f-44ec-b672-82ec154c4847" />
-
-
 
 
 
